@@ -1,0 +1,63 @@
+?php 
+
+	echo "<h1>Ejercicios PHP</h1><hr>";
+	echo "<h2>Operaciones Aritmeticas</h2>";
+
+	class Operaciones
+		{
+
+			//atributos 
+
+			public $s_a;
+			public $s_b;
+			public $r_a;
+			public $r_b;
+			public $m_a;
+			public $m_b;
+			public $d_a;
+			public $d_b;
+
+			//metodos
+			
+			public function Suma()
+			{
+				$s_a = 52;
+				$s_b = 31;
+
+				$rsuma = $s_a + $s_b;
+
+				echo "<h3>A) Suma</h3>";
+				echo $s_a . "&nbsp;" ."+" . "&nbsp;" . $s_b . "&nbsp;" . "=" . "&nbsp;". "<b>" . $rsuma . "</b>" . "<br>";
+			}
+
+			public function Resta($r_a, $r_b)
+			{
+				$rresta = $r_a - $r_b;
+
+				echo "<h3>B) Resta</h3>";
+				echo $r_a . "&nbsp;" ."-" . "&nbsp;" . $r_b . "&nbsp;" . "=" . "&nbsp;". "<b>" . $rresta . "</b>" . "<br>";
+			}
+
+			public function Multiplicar($m_a, $m_b)
+			{
+				$rm = $m_a * $m_b;
+
+				echo "<h3>C) Multiplicacion</h3>";
+				echo $m_a . "&nbsp;" ."*" . "&nbsp;" . $m_b . "&nbsp;" . "=" . "&nbsp;". "<b>" . $rm . "</b>" . "<br>";
+			}
+
+			public function Dividir($d_a, $d_b)
+			{
+				$rd = $d_a / $d_b;
+
+				echo "<h3>D) Division</h3>";
+				echo $d_a . "&nbsp;" ."/" . "&nbsp;" . $d_b . "&nbsp;" . "=" . "&nbsp;". "<b>" . $rd . "</b>" . "<br>";
+			}
+		}
+
+	$obj = new Operaciones();
+	$obj->Suma();
+	$obj->Resta(88,57);
+	$obj->Multiplicar(25,5);
+	$obj->Dividir(45, 5);
+?>
