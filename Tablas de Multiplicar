@@ -1,0 +1,13 @@
+<?PHP
+	echo "<h1>Tabla de multiplicar</h1>";
+
+	for ($a=1; $a <=10 ; $a++) // numero 
+	{
+		for ($b=1; $b <=10 ; $b++) // multiplicando
+		{
+			$c = $a * $b;
+			echo $a."*".$b."=".$c."<br/>";
+		}
+		echo "<br/>";
+	}
+?>
