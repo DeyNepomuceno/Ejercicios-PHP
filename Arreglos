@@ -1,0 +1,43 @@
+<?php
+	//Ejercicio:
+	//Generar un arreglo con 50 números consecutivos empezando de cero 
+	//Mostrarlos primero en orden ascendente y luego descendente
+
+	class Arreglos{
+    
+    //Atributos
+    public $arreglo1;
+    
+    //Metodos
+		public function generarArreglo(){
+			echo "<h1>Genera un arreglo con 50 números consecutivos empezando de cero </h1><hr>";
+			
+			$arreglo1 = array();
+
+			for ($i=0; $i <50 ; $i++) {
+				$arreglo1[$i]=$i;
+			}
+			
+			var_dump($arreglo1); //Muestra información sobre una variable
+
+			echo "<br>";
+
+			echo "<h1>Ordenar arreglos</h1><hr>";
+
+			echo "<h4>Ascendente</h4>";
+			sort($arreglo1);
+			print_r($arreglo1);
+
+			echo "<br><br>";
+
+			echo "<h4>Descendente</h4>";
+			rsort($arreglo1);
+			print_r($arreglo1);
+
+			echo "<br><br>";
+
+		}
+	}
+	$obj = new Arreglos();
+	$obj->generarArreglo();
+?>
