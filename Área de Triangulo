@@ -1,0 +1,25 @@
+<?php
+	echo "<h1>Calcula el area de un triangulo.</h1>";
+
+	 class Triangulo{	
+
+      //atributos
+      public $base;
+      public $altura;
+      public $area;	
+
+      //metodos
+      public function areaTriangulo($base, $altura){
+
+        echo "Los valores asignados son: <br><br>";
+        echo "Base = " .$base . "<br>";
+        echo "Altura  = " . $altura . "<br><br>";
+
+        $area = ($base * $altura) / 2;
+
+        echo "El area del triangulo es :" . $area;
+		  }
+	}
+	$obj = new Triangulo();
+	$obj->areaTriangulo(5, 7);
+?>
