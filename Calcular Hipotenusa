@@ -1,0 +1,30 @@
+<?php
+	echo "<h1>Calcula la <i>hipotenusa</i> de un triangulo rectangulo.</h1>";
+	/*echo "<h2>Formula: </h2>";
+	echo "<h3>Teorema de Pitagoras: </h3>";*/
+
+class PerimetroRectangulo{
+		
+    //atributos
+		public $lado_a;
+  	public $lado_b;
+		public $hipotenusa;
+
+    //metodos
+		public function Hipotenusa($lado_a, $lado_b){
+				
+      echo "Los valores asignados son: <br><br>";
+			echo "Lado A = " . $lado_a . "<br>";
+			echo "Lado B = " .$lado_b . "<br><br>";
+				
+			$hipotenusa = sqrt(pow($lado_a, 2) + pow($lado_b, 2));
+			//$hipotenusa = sqrt(($lado_a ** 2) + ($lado_b ** 2));
+			echo "La Hipotenusa es: " . "<b>" . $hipotenusa . "</b>";
+			
+      //sqrt 	=> devuelve la raiz cuadrada de un numero
+			//pow 	=> devuelve el valor de base elevado a la potencia.
+			} 
+	}
+$obj = new PerimetroRectangulo();
+$obj->Hipotenusa(1, 3);
+?>
